@@ -64,6 +64,8 @@ body {
 
 main {
   min-height: 100vh;
+  position: relative;
+  z-index: 1;
 }
 
 /* A elements that don't have a class get default styles */
@@ -124,3 +126,67 @@ input[type='reset'] {
   height: 100vh;
   z-index: 12000;
 }
+
+.logo{
+  font-family: Nimbus Sans L;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; /* 36px */
+letter-spacing: 3.6px;
+text-transform: uppercase;
+}
+
+#separator{
+  border-right: 1px solid #898181;
+  max-width:1px;
+}
+
+#intro-left{
+  height: 100vh;
+  max-width:fit-content;
+  padding:31px 70px 31px 70px;
+}
+
+.intro-name{
+  color: #FFF;
+font-family: Nimbus Sans L;
+font-size: 60px;
+font-style: normal;
+font-weight: 700;
+line-height: 72px; /* 90% */
+letter-spacing: -2px;
+}
+
+.intro-sub-heading{
+color: #FFF;
+font-family: Nimbus Sans L;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 72px; /* 120% */
+letter-spacing: -2px;
+}
+
+/* Add margin of 50px to the first sub-heading */
+/* .intro-sub-heading:first-of-type{
+  margin-top:50px;
+} */
+
+.intro-paragraph{
+  color: #FFF;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 52.5px; /* 218.75% */
+letter-spacing: -2px;
+max-width:771px;
+margin-top:40px;
+}
+/* Add color to the span inside the sub-heading */
+/* .intro-sub-heading span{
+  background: -webkit-linear-gradient(180deg,#97D08D 38.79%, #49C1EB 44.8%,#474BB6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+} */
