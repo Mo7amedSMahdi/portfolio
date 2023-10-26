@@ -3,6 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Nimbus Sans L';
+  src: url('../fonts/NimbusSansL-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   /* Colors */
 
@@ -146,6 +153,11 @@ text-transform: uppercase;
   height: 100vh;
   max-width:fit-content;
   padding:31px 70px 31px 70px;
+  z-index: 1;
+}
+
+#intro-right{
+  z-index: 1;
 }
 
 .intro-name{
@@ -178,11 +190,10 @@ letter-spacing: -2px;
 font-size: 20px;
 font-style: normal;
 font-weight: 400;
-line-height: 52.5px; /* 218.75% */
-letter-spacing: -2px;
 max-width:771px;
 margin-top:40px;
 }
+
 /* Add color to the span inside the sub-heading */
 /* .intro-sub-heading span{
   background: -webkit-linear-gradient(180deg,#97D08D 38.79%, #49C1EB 44.8%,#474BB6);
@@ -190,3 +201,87 @@ margin-top:40px;
   -webkit-text-fill-color: transparent;
 
 } */
+
+.section{
+  min-height: 100vh;
+  position: relative;
+}
+
+#intro > hr , .section > hr{
+  border: 1px solid #898181;
+  max-width:100%;
+
+}
+
+.section-title{
+  color: #fff;
+text-align: center;
+font-family: 'Nimbus Sans L';
+font-size: 157px;
+font-style: normal;
+font-weight: 600;
+line-height: 163px; /* 103.822% */
+letter-spacing: -13px;
+text-transform: uppercase;
+width: fit-content;
+}
+
+.section-sub-heading{
+  color: #FFF;
+text-align: center;
+font-family: 'Nimbus Sans L';
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 63px; /* 262.5% */
+text-transform: capitalize;
+}
+
+.color-gr-1{
+  position: absolute;
+  top:0;
+  right: -10px;
+  z-index: -2;
+}
+
+.color-gr-2{
+  position: absolute;
+  top:0;
+  right: -20px;
+}
+.color-gr-3{
+  position: absolute;
+  bottom: 0;
+  left: 0;  
+    
+}
+.color-gr-1 > svg,.color-gr-3 > svg,.color-gr-3 > svg{
+  width: 100%;
+  max-height: 100vh;
+}
+
+.project-card{
+  width: 629px;
+  height: 392px;
+  border-radius: 32px;
+}
+
+.project-card > img{
+  width: 629px;
+  height: 304px;
+  border-radius: 32px;
+}
+
+.project-card-title{
+font-size: 80px;
+font-style: normal;
+font-weight: 900;
+ width: 629px;
+  height: 304px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon > svg{
+width:24px;
+}

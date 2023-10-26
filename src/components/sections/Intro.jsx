@@ -2,15 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import { Button } from "@nextui-org/react";
 import { motion } from "framer-motion";
-import Ellipse from "../../assets/shapes/Ellipse.svg";
 
 const StyledEllipse = styled.div`
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
+  max-height: 1024px;
   & > svg {
-    height: 100%;
+    height: 100vh;
   }
 `;
 
@@ -26,6 +26,7 @@ const StyledGradient = styled.div`
   border-radius: 9999px;
   filter: blur(280.42px);
   z-index: -1;
+  max-height: 1024px;
 `;
 const StyledGradientTra = styled.div`
   position: absolute;
@@ -39,6 +40,7 @@ const StyledGradientTra = styled.div`
   border-radius: 9999px;
   filter: blur(280.42px);
   z-index: -1;
+  max-height: 500px;
 `;
 const Intro = () => {
   return (
@@ -46,40 +48,132 @@ const Intro = () => {
       <div className="container">
         <StyledEllipse>
           <svg
-            width="594"
-            height="1024"
-            viewBox="0 0 594 1024"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            width="590"
+            height="1024"
+            viewBox="0 0 590 1024"
+            fill="none"
           >
             <path
-              d="M834 -294C373.395 -294 0 79.3945 0 540C0 1000.61 373.395 1374 834 1374L834 -294Z"
+              d="M673 -89C301.312 -89 0 212.089 0 583.5C0 954.911 301.312 1256 673 1256L673 -89Z"
               fill="url(#paint0_linear_11_377)"
             />
             <defs>
               <linearGradient
                 id="paint0_linear_11_377"
-                x1="600.917"
-                y1="540"
-                x2="-299.852"
-                y2="540"
+                x1="484.913"
+                y1="583.5"
+                x2="-241.967"
+                y2="583.5"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#1E1E26" />
-                <stop offset="1" stopColor="#16181F" stopOpacity="0.8" />
+                <stop stop-color="#1E1E26" />
+                <stop offset="1" stop-color="#16181F" stop-opacity="0.8" />
               </linearGradient>
             </defs>
           </svg>
         </StyledEllipse>
-        <StyledGradient />
-        <StyledGradientTra />
+        {/* <StyledGradient /> */}
+        <div className="color-gr-1">
+          <svg
+            width="989"
+            height="1024"
+            viewBox="0 0 989 1024"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g filter="url(#filter0_f_11_374)">
+              <ellipse
+                cx="374.574"
+                cy="471.694"
+                rx="374.574"
+                ry="471.694"
+                transform="matrix(0.999925 0.013069 -0.00517433 0.999991 282.881 97.833)"
+                fill="url(#paint0_linear_11_374)"
+              />
+            </g>
+            <g filter="url(#filter1_f_11_374)">
+              <path
+                d="M780.495 -23.2935L1103.26 693.044L450.364 684.511L780.495 -23.2935Z"
+                fill="url(#paint1_linear_11_374)"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_11_374"
+                x="0.0169678"
+                y="-177.713"
+                width="1309.94"
+                height="1504.26"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="140.208"
+                  result="effect1_foregroundBlur_11_374"
+                />
+              </filter>
+              <filter
+                id="filter1_f_11_374"
+                x="240.053"
+                y="-233.605"
+                width="1073.51"
+                height="1136.96"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="105.156"
+                  result="effect1_foregroundBlur_11_374"
+                />
+              </filter>
+              <linearGradient
+                id="paint0_linear_11_374"
+                x1="77.4359"
+                y1="65.0092"
+                x2="762.246"
+                y2="790.505"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#6100FF" />
+                <stop offset="1" stop-color="#00FFFF" stop-opacity="0" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_11_374"
+                x1="780.495"
+                y1="-23.2935"
+                x2="768.087"
+                y2="926.037"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#0075FF" />
+                <stop offset="1" stop-color="#00A3FF" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        {/* <StyledGradientTra /> */}
         <div id="content" className="flex">
           <div
             id="intro-left"
             className="flex-1 flex flex-col justify-between items-center px-10"
           >
             <p className="logo">LOGO</p>
-            <div className="flex flex-col gap-4 max-w-fit">
+            <div className="flex flex-col gap-10 max-w-fit">
               <Button radius="none" isIconOnly color="none">
                 <motion.svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +259,7 @@ const Intro = () => {
           </div>
           <div id="separator" className="flex-1" />
           <div
-            id="right"
+            id="intro-right"
             className="flex-1 flex justify-center items-center h-screen"
           >
             <div className="flex flex-col">
@@ -195,13 +289,33 @@ const Intro = () => {
               </h3>
               <p className="intro-paragraph">
                 Elevating Business Through Code
-                <br /> Expert Full-Stack Engineer, Mastering Remote
-                Collaboration, Meeting Deadlines, and Multilingual Innovation.
+                <br /> Expert{" "}
+                <motion.span
+                  initial={{
+                    background:
+                      "linear-gradient(270deg, #97D08D 38.79%, #49C1EB 44.8%, #474BB6 50%)",
+                    backgroundClip: "text",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                  }}
+                  animate={{
+                    background:
+                      "linear-gradient(90deg, #97D08D, #49C1EB, #474BB6)",
+                    backgroundClip: "text",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                  }}
+                >
+                  Full-Stack Engineering
+                </motion.span>
+                , Mastering Remote Collaboration, Meeting Deadlines, and
+                Multilingual Innovation.
               </p>
             </div>
           </div>
         </div>
       </div>
+      <hr />
     </section>
   );
 };

@@ -1,4 +1,5 @@
 import MainNavBar from "./components/menus/MainNavBar";
+import Projects from "./components/sections/Projects";
 import Intro from "./components/sections/intro";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <MainNavBar />
       <Intro />
+      <Projects />
     </>
   );
 }
